@@ -355,10 +355,13 @@
             <button class="cbm-dropdown-toggle">
                 Give <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="cbm-dropdown-menu">
-                <a href="<?php echo home_url('/ways-to-give'); ?>">Ways to Give</a>
-                <a href="<?php echo home_url('/strategic-funds'); ?>">Strategic Funds</a>
-                <a href="<?php echo home_url('/donor-care'); ?>">Donor Care</a>
+            <div class="cbm-dropdown-menu cbm-mega-menu">
+                <div class="cbm-mega-col">
+                    <p class="cbm-mega-heading">Give</p>
+                    <a href="<?php echo home_url('/ways-to-give'); ?>">Ways to Give</a>
+                    <a href="<?php echo home_url('/strategic-funds'); ?>">Strategic Funds</a>
+                    <a href="<?php echo home_url('/donor-care'); ?>">Donor Care</a>
+                </div>
             </div>
         </div>
 
