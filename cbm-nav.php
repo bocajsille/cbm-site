@@ -141,14 +141,6 @@
     padding: 0.35rem 0.5rem;
 }
 
-/* Small dropdown (Give) */
-.cbm-dropdown-small .cbm-dropdown-menu {
-    left: auto;
-    right: auto;
-    width: 200px;
-    border-radius: 0 0 12px 12px;
-}
-
 /* Login + Donate */
 .cbm-nav-login {
     color: rgba(255,255,255,0.78);
@@ -359,7 +351,7 @@
         </div>
 
         <!-- Give -->
-        <div class="cbm-dropdown cbm-dropdown-small">
+        <div class="cbm-dropdown">
             <button class="cbm-dropdown-toggle">
                 Give <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>

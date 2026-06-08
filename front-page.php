@@ -43,13 +43,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
     overflow: hidden;
     padding-top: 70px;
 }
-.cbm-hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 80px;
-    background: linear-gradient(to bottom, transparent, #fff);
-}
+/* no hero fade */
 .cbm-hero-content {
     position: relative;
     z-index: 1;
