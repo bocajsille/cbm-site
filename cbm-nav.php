@@ -1,11 +1,257 @@
 <?php
 /**
  * CBM Shared Navigation
- * Include this file in every page template with:
- * get_template_part('cbm-nav');
- * (place this file in your child theme root as cbm-nav.php)
+ * Include in any page template with: get_template_part('cbm-nav');
  */
 ?>
+<style>
+/* ============================================
+   CBM NAV STYLES
+   Once confirmed, move these to style.css
+   ============================================ */
+
+.cbm-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 70px;
+    background: rgba(26, 54, 93, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.cbm-nav.cbm-nav-scrolled {
+    background: rgba(20, 42, 74, 0.98);
+    box-shadow: 0 2px 24px rgba(0,0,0,0.25);
+}
+.cbm-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+.cbm-logo img { height: 42px; width: auto; }
+
+.cbm-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: auto;
+}
+
+/* Dropdown */
+.cbm-dropdown { position: static; }
+
+.cbm-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 0.85rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    height: 70px;
+}
+.cbm-dropdown:hover .cbm-dropdown-toggle,
+.cbm-dropdown-toggle:focus-visible {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+.cbm-chevron { transition: transform 0.2s; opacity: 0.7; }
+.cbm-dropdown:hover .cbm-chevron { transform: rotate(180deg); opacity: 1; }
+
+/* Dropdown menus — shown on hover via CSS */
+.cbm-dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 70px;
+    background: rgba(18, 38, 66, 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.cbm-dropdown:hover .cbm-dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.cbm-dropdown-menu a {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    transition: color 0.15s, background 0.15s;
+    white-space: nowrap;
+}
+.cbm-dropdown-menu a:hover { color: #fff; background: rgba(255,255,255,0.1); }
+
+/* Mega menus — full width, flush under nav */
+.cbm-mega-menu {
+    flex-direction: row !important;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 0 0 12px 12px;
+}
+.cbm-mega-col {
+    flex: 1;
+    padding: 0 1.5rem;
+    border-right: 1px solid rgba(255,255,255,0.07);
+}
+.cbm-mega-col:first-child { padding-left: 0; }
+.cbm-mega-col:last-child { padding-right: 0; border-right: none; }
+.cbm-mega-heading {
+    color: rgba(255,255,255,0.45);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.cbm-mega-col a {
+    display: block;
+    white-space: normal;
+    line-height: 1.4;
+    padding: 0.35rem 0.5rem;
+}
+
+/* Small dropdown (Give) */
+.cbm-dropdown-small .cbm-dropdown-menu {
+    left: auto;
+    right: auto;
+    width: 200px;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Login + Donate */
+.cbm-nav-login {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 0.85rem;
+    margin-left: 0.5rem;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+.cbm-nav-login:hover { color: #fff; background: rgba(255,255,255,0.1); }
+.cbm-nav-donate {
+    background: #4CAF50;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.5rem 1.4rem;
+    border-radius: 50px;
+    margin-left: 0.75rem;
+    transition: background 0.2s, transform 0.15s;
+}
+.cbm-nav-donate:hover { background: #43a047; transform: translateY(-1px); }
+
+/* Hamburger */
+.cbm-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+}
+.cbm-hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+}
+.cbm-hamburger.cbm-ham-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.cbm-hamburger.cbm-ham-open span:nth-child(2) { opacity: 0; }
+.cbm-hamburger.cbm-ham-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .cbm-hamburger { display: flex; }
+    .cbm-nav-links {
+        display: none;
+        position: fixed;
+        top: 70px; left: 0; right: 0; bottom: 0;
+        background: rgba(18, 38, 66, 0.98);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+        overflow-y: auto;
+        gap: 0.25rem;
+    }
+    .cbm-nav-links.cbm-mobile-open { display: flex; }
+    .cbm-dropdown { width: 100%; }
+    .cbm-dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        height: auto;
+    }
+    .cbm-dropdown-menu,
+    .cbm-mega-menu {
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        position: static !important;
+        width: 100% !important;
+        border-radius: 8px;
+        margin-top: 0.25rem;
+        background: rgba(255,255,255,0.05);
+        box-shadow: none;
+        border: 1px solid rgba(255,255,255,0.08);
+        display: none;
+        padding: 1rem;
+    }
+    .cbm-dropdown.cbm-mobile-open .cbm-dropdown-menu { display: flex; }
+    .cbm-mega-menu { flex-direction: column !important; }
+    .cbm-mega-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        padding: 0.75rem 0;
+    }
+    .cbm-mega-col:last-child { border-bottom: none; }
+    .cbm-nav-login, .cbm-nav-donate {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+}
+</style>
+
 <nav class="cbm-nav" id="cbmNav">
     <a href="<?php echo home_url(); ?>" class="cbm-logo">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/cbm-logo.png" alt="Children's Bible Ministries Logo">
@@ -15,7 +261,7 @@
 
         <!-- About -->
         <div class="cbm-dropdown">
-            <button class="cbm-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <button class="cbm-dropdown-toggle">
                 About <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="cbm-dropdown-menu cbm-mega-menu">
@@ -54,7 +300,7 @@
 
         <!-- Get Involved -->
         <div class="cbm-dropdown">
-            <button class="cbm-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <button class="cbm-dropdown-toggle">
                 Get Involved <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="cbm-dropdown-menu cbm-mega-menu">
@@ -89,7 +335,7 @@
 
         <!-- Resources -->
         <div class="cbm-dropdown">
-            <button class="cbm-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <button class="cbm-dropdown-toggle">
                 Resources <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="cbm-dropdown-menu cbm-mega-menu">
@@ -113,8 +359,8 @@
         </div>
 
         <!-- Give -->
-        <div class="cbm-dropdown">
-            <button class="cbm-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+        <div class="cbm-dropdown cbm-dropdown-small">
+            <button class="cbm-dropdown-toggle">
                 Give <svg class="cbm-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="cbm-dropdown-menu">
@@ -128,7 +374,6 @@
         <a href="https://www.continuetogive.com/cbm" target="_blank" rel="noopener noreferrer" class="cbm-nav-donate">Donate</a>
     </div>
 
-    <!-- Hamburger -->
     <button class="cbm-hamburger" id="cbmHamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
     </button>
@@ -136,33 +381,7 @@
 
 <script>
 (function() {
-    // Dropdown toggles
-    document.querySelectorAll('.cbm-dropdown-toggle').forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            var isOpen = this.getAttribute('aria-expanded') === 'true';
-            // Close all
-            document.querySelectorAll('.cbm-dropdown-toggle').forEach(function(b) {
-                b.setAttribute('aria-expanded', 'false');
-                b.closest('.cbm-dropdown').classList.remove('cbm-open');
-            });
-            // Open this one if it was closed
-            if (!isOpen) {
-                this.setAttribute('aria-expanded', 'true');
-                this.closest('.cbm-dropdown').classList.add('cbm-open');
-            }
-        });
-    });
-
-    // Close on outside click
-    document.addEventListener('click', function() {
-        document.querySelectorAll('.cbm-dropdown-toggle').forEach(function(b) {
-            b.setAttribute('aria-expanded', 'false');
-            b.closest('.cbm-dropdown').classList.remove('cbm-open');
-        });
-    });
-
-    // Hamburger mobile toggle
+    // Mobile hamburger toggle
     var ham = document.getElementById('cbmHamburger');
     var links = document.getElementById('cbmNavLinks');
     if (ham && links) {
@@ -173,10 +392,19 @@
         });
     }
 
-    // Scroll: add shadow to nav
+    // Mobile: tap toggles to open/close dropdowns
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        document.querySelectorAll('.cbm-dropdown-toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                this.closest('.cbm-dropdown').classList.toggle('cbm-mobile-open');
+            });
+        });
+    }
+
+    // Scroll shadow on nav
     var nav = document.getElementById('cbmNav');
     window.addEventListener('scroll', function() {
         if (nav) nav.classList.toggle('cbm-nav-scrolled', window.scrollY > 20);
-    }, {passive: true});
+    }, { passive: true });
 })();
 </script>
