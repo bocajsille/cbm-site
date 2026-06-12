@@ -12,14 +12,12 @@
 .h{background:linear-gradient(135deg,rgba(10,32,64,.88),rgba(26,54,93,.80));padding:9rem 2rem 4.5rem;}
 .hi{max-width:1100px;margin:0 auto;}.bc{font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:.85rem;}.bc a{color:rgba(255,255,255,.5);text-decoration:none;}
 .h h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:#fff;letter-spacing:-.02em;}
-.coming{flex:1;display:flex;align-items:center;justify-content:center;padding:80px 40px;text-align:center;}
-.coming-inner{max-width:560px;}
-.coming-inner h2{font-size:1.6rem;font-weight:700;color:#0a2040;margin-bottom:1rem;}
-.coming-inner p{font-size:1rem;color:#546e8a;line-height:1.8;margin-bottom:1.5rem;font-family:'Arial',sans-serif;}
-.coming-inner .note{background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;text-align:left;}
-.coming-inner .note p{font-size:.875rem;color:#5d4037;margin:0;}
-.btn{display:inline-block;padding:12px 26px;background:#0a2040;color:#fff;font-family:'Arial',sans-serif;font-size:14px;font-weight:700;text-decoration:none;border-radius:4px;margin:4px;}
-.btn:hover{background:#1a365d;}
+.body-section{flex:1;padding:80px 40px;max-width:680px;margin:0 auto;text-align:center;}
+.body-section h2{font-size:1.6rem;font-weight:700;color:#0a2040;margin-bottom:1rem;}
+.body-section p{font-size:1rem;color:#374f6b;line-height:1.8;margin-bottom:1.5rem;font-family:'Arial',sans-serif;}
+.note{background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;text-align:left;}
+.note p{font-size:.875rem;color:#5d4037;margin:0;font-family:'Arial',sans-serif;}
+.btn{display:inline-block;padding:13px 28px;background:#0a2040;color:#fff;font-family:'Arial',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border-radius:4px;margin:4px;}
 .ft{background:#060f1e;padding:30px 40px;color:rgba(255,255,255,.4);font-family:'Arial',sans-serif;font-size:12px;}
 .ft-i{max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08);padding-top:18px;}.ft a{color:rgba(255,255,255,.5);text-decoration:none;}
 </style>
@@ -27,15 +25,15 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Prayer &amp; Engagement &rsaquo; Prayer Calendar; ?></p>
-<h1><?php echo Prayer Calendar; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Prayer &amp; Engagement &rsaquo; Prayer Calendar</p>
+<h1>Prayer Calendar</h1>
 </div></div>
-<div class="coming"><div class="coming-inner">
-<h2>This Page Is Coming Soon</h2>
-<p><?php echo Join us in praying for missionaries, ministry locations, children reached, and Gospel work around the world.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Consider embedding a monthly prayer calendar PDF or building a dynamic calendar. Awaiting content from client.; ?></p></div>
-<a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
-<a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
-</div></div>
-<footer class="ft"><div class="ft-i"><p>&copy; <?php echo date('Y'); ?> Children's Bible Ministries, Inc. &bull; <a href="<?php echo home_url('/financials-financial-accountability'); ?>">Financial Accountability</a></p></div></footer>
-</div><?php wp_footer(); ?></body></html>
+<div class="body-section">
+<h2>The Monthly Prayer Calendar Is for Prayer Partners</h2>
+<p>The CBM Prayer Calendar is a confidential monthly resource shared with registered CBM Prayer Partners. Each month, ministry locations throughout the CBM family submit prayer requests that are compiled and distributed to those who have committed to praying with us.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> Once a Prayer Partner signup system is in place, this page can either embed a current-month calendar for logged-in partners, provide a download link after email confirmation, or redirect to the Become a Prayer Partner signup page. For now, direct visitors to sign up.</p></div>
+<p>Becoming a Prayer Partner is free and easy. Sign up to receive the monthly Prayer Calendar and begin praying alongside the CBM family.</p>
+<a href="<?php echo home_url('/become-a-prayer-partner');?>" class="btn">Join the CBM Prayer Team</a>
+</div>
+<footer class="ft"><div class="ft-i"><p>&copy; <?php echo date('Y');?> Children's Bible Ministries, Inc.</p></div></footer>
+</div><?php wp_footer();?></body></html>
