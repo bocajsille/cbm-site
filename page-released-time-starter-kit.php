@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Church &amp; Leader Resources &rsaquo; Released Time Starter Kit; ?></p>
-<h1><?php echo Released Time Starter Kit; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Church &amp; Leader Resources &rsaquo; Released Time Starter Kit</p>
+<h1>Released Time Starter Kit</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Everything you need to start a Released Time Bible Education program in your community.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Should include downloadable resources, instructions, and a contact/request form. Awaiting content from client.; ?></p></div>
+<p>Everything you need to start a Released Time Bible Education program in your community.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Should include downloadable resources, instructions, and a contact/request form. Awaiting content from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

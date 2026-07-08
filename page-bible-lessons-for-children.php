@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Family &amp; Children Resources &rsaquo; Bible Lessons for Children; ?></p>
-<h1><?php echo Bible Lessons for Children; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Family &amp; Children Resources &rsaquo; Bible Lessons for Children</p>
+<h1>Bible Lessons for Children</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Free Bible correspondence lessons for children by mail or email — Scripture-centered, age-appropriate, and available at no cost.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Should describe the correspondence lessons program and include a request/enrollment form. Awaiting content from client.; ?></p></div>
+<p>Free Bible correspondence lessons for children by mail or email — Scripture-centered, age-appropriate, and available at no cost.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Should describe the correspondence lessons program and include a request/enrollment form. Awaiting content from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

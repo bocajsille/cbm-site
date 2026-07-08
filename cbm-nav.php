@@ -284,6 +284,7 @@
                     <p class="cbm-mega-heading">Leadership &amp; History</p>
                     <a href="<?php echo home_url('/leadership-team'); ?>">Leadership Team</a>
                     <a href="<?php echo home_url('/board-of-directors'); ?>">Board of Directors</a>
+                    <a href="<?php echo home_url('/organizational-structure'); ?>">Organizational Structure</a>
                     <a href="<?php echo home_url('/history-timeline'); ?>">History &amp; Timeline</a>
                     <a href="<?php echo home_url('/child-protection-safety'); ?>">Child Protection &amp; Safety</a>
                 </div>
@@ -301,6 +302,7 @@
                     <a href="<?php echo home_url('/volunteer-opportunities'); ?>">Volunteer Opportunities</a>
                     <a href="<?php echo home_url('/serve-on-a-mission-trip'); ?>">Serve on a Mission Trip</a>
                     <a href="<?php echo home_url('/work-at-a-cbm-camp'); ?>">Work at a CBM Camp</a>
+                    <a href="<?php echo home_url('/summer-seasonal-staff'); ?>">Summer &amp; Seasonal Staff</a>
                 </div>
                 <div class="cbm-mega-col">
                     <p class="cbm-mega-heading">Training &amp; Calling</p>
@@ -308,6 +310,8 @@
                     <a href="<?php echo home_url('/missionary-pathway'); ?>">Missionary Pathway</a>
                     <a href="<?php echo home_url('/ministry-opportunities'); ?>">Ministry Opportunities</a>
                     <a href="<?php echo home_url('/leadership-development'); ?>">Leadership Development</a>
+                    <a href="<?php echo home_url('/missionary-ministry-training'); ?>">Missionary &amp; Ministry Training</a>
+                    <a href="<?php echo home_url('/missionary-intern-training-center'); ?>">Missionary &amp; Intern Training Center</a>
                     <a href="<?php echo home_url('/ministry-camp-staff-training'); ?>">Ministry &amp; Camp Staff Training</a>
                     <a href="<?php echo home_url('/ministry-training-center'); ?>">Ministry Training Center</a>
                 </div>
@@ -359,8 +363,16 @@
                 <div class="cbm-mega-col">
                     <p class="cbm-mega-heading">Give</p>
                     <a href="<?php echo home_url('/ways-to-give'); ?>">Ways to Give</a>
-                    <a href="<?php echo home_url('/strategic-funds'); ?>">Strategic Funds</a>
+                    <a href="<?php echo home_url('/missionary-and-mission-trip-support'); ?>">Support Missionaries &amp; Mission Trips</a>
                     <a href="<?php echo home_url('/donor-care'); ?>">Donor Care</a>
+                </div>
+                <div class="cbm-mega-col">
+                    <p class="cbm-mega-heading">Strategic Funds</p>
+                    <a href="<?php echo home_url('/strategic-funds'); ?>">Strategic Funds Overview</a>
+                    <a href="<?php echo home_url('/global-impact-fund'); ?>">Global Impact Fund</a>
+                    <a href="<?php echo home_url('/expansion-fund'); ?>">Expansion Fund</a>
+                    <a href="<?php echo home_url('/pastor-missionary-rest-renewal-fund'); ?>">Pastor &amp; Missionary Rest &amp; Renewal Fund</a>
+                    <a href="<?php echo home_url('/capital-campaign'); ?>">Capital Campaign</a>
                 </div>
             </div>
         </div>

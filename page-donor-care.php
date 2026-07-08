@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Give &rsaquo; Donor Care; ?></p>
-<h1><?php echo Donor Care; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Give &rsaquo; Donor Care</p>
+<h1>Donor Care</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Children's Bible Ministries values every partner who invests in the mission. Learn how we care for and communicate with our donors.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Should describe donor communication practices, how to update giving information, and a contact form for donor inquiries. Awaiting content from client.; ?></p></div>
+<p>Children's Bible Ministries values every partner who invests in the mission. Learn how we care for and communicate with our donors.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Should describe donor communication practices, how to update giving information, and a contact form for donor inquiries. Awaiting content from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

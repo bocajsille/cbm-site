@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Ministry Training Center; ?></p>
-<h1><?php echo Ministry Training Center; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Ministry Training Center</p>
+<h1>Ministry Training Center</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo The CBM Ministry Training Center equips future missionaries and ministry workers for Gospel service.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Awaiting content from client.; ?></p></div>
+<p>The CBM Ministry Training Center equips future missionaries and ministry workers for Gospel service.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Awaiting content from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

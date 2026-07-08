@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Internship Program; ?></p>
-<h1><?php echo Internship Program &amp; Application; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Internship Program</p>
+<h1>Internship Program &amp; Application</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo The CBM Internship Program provides structured training, mentorship, and hands-on ministry experience for those exploring a calling to missionary service.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo Use current internship page from the existing site as a starting point, combined with ILT content. Client to provide updated copy and application form.; ?></p></div>
+<p>The CBM Internship Program provides structured training, mentorship, and hands-on ministry experience for those exploring a calling to missionary service.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> Use current internship page from the existing site as a starting point, combined with ILT content. Client to provide updated copy and application form.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

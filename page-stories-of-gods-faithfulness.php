@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Historical Ministry Narratives &rsaquo; Stories of God's Faithfulness; ?></p>
-<h1><?php echo Stories of God's Faithfulness; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Historical Ministry Narratives &rsaquo; Stories of God's Faithfulness</p>
+<h1>Stories of God's Faithfulness</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Historical narratives of God's faithfulness through Children's Bible Ministries across 90+ years of gospel ministry.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Awaiting content from client. Consider featuring long-form historical stories, archival photos, and missionary testimonies.; ?></p></div>
+<p>Historical narratives of God's faithfulness through Children's Bible Ministries across 90+ years of gospel ministry.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Awaiting content from client. Consider featuring long-form historical stories, archival photos, and missionary testimonies.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

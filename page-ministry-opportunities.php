@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Ministry Opportunities; ?></p>
-<h1><?php echo Ministry Opportunities; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Ministry Opportunities</p>
+<h1>Ministry Opportunities</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Explore current and anticipated ministry openings within the CBM network — full-time, part-time, and internship roles.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo Add current openings, anticipated future openings, and internship opportunities. Update regularly as positions change. Content needed from client.; ?></p></div>
+<p>Explore current and anticipated ministry openings within the CBM network — full-time, part-time, and internship roles.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> Add current openings, anticipated future openings, and internship opportunities. Update regularly as positions change. Content needed from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>

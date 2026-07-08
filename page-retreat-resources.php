@@ -27,13 +27,13 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><?php echo <a href="<?php echo home_url();?>">Home</a> &rsaquo; Church &amp; Leader Resources &rsaquo; Retreat Resources; ?></p>
-<h1><?php echo Retreat Resources; ?></h1>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Church &amp; Leader Resources &rsaquo; Retreat Resources</p>
+<h1>Retreat Resources</h1>
 </div></div>
 <div class="coming"><div class="coming-inner">
 <h2>This Page Is Coming Soon</h2>
-<p><?php echo Find CBM retreat facilities, discounted pastor and missionary lodging, and group retreat options at CBM locations.; ?></p>
-<div class="note"><p>⚠️ <strong>Webmaster note:</strong> <?php echo No content found in PDF. Should list all CBM locations offering retreat/group space with contact links. Awaiting content from client.; ?></p></div>
+<p>Find CBM retreat facilities, discounted pastor and missionary lodging, and group retreat options at CBM locations.</p>
+<div class="note"><p>⚠️ <strong>Webmaster note:</strong> No content found in PDF. Should list all CBM locations offering retreat/group space with contact links. Awaiting content from client.</p></div>
 <a href="<?php echo home_url(); ?>" class="btn">Return Home</a>
 <a href="<?php echo home_url('/volunteer-opportunities'); ?>" class="btn">Get Involved</a>
 </div></div>
