@@ -62,7 +62,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a2940;}
 
 <div class="cbm-hero">
 <div class="cbm-hero-inner">
-<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/training-and-calling');?>">Training &amp; Calling</a> &rsaquo; Missionary Pathway</p>
+<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Training &amp; Calling &rsaquo; Missionary Pathway</p>
 <h1>The Missionary Pathway</h1>
 </div></div>
 
@@ -108,7 +108,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a2940;}
 <li>Administration, maintenance, hospitality, communications, and operations</li>
 </ul>
 <p>Every role is centered on faithfully communicating God's Word and helping the next generation grow in faith.</p>
-<a href="<?php echo home_url('/programs-and-outreach');?>" class="la">Explore CBM Programs &amp; Outreach</a>
 </div></div>
 
 <div class="s sl"><div class="si sin">

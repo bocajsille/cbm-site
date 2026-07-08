@@ -262,7 +262,7 @@
                     <a href="<?php echo home_url('/mission-vision'); ?>">Mission &amp; Vision</a>
                     <a href="<?php echo home_url('/beliefs-statement-of-faith'); ?>">Beliefs / Statement of Faith</a>
                     <a href="<?php echo home_url('/ministry-model-the-3-cs'); ?>">Ministry Model: The 3 C's</a>
-                    <a href="<?php echo home_url('/scope-gospel-impact'); ?>">Scope &amp; Global Impact</a>
+                    <a href="<?php echo home_url('/scope-global-impact'); ?>">Scope &amp; Global Impact</a>
                 </div>
                 <div class="cbm-mega-col">
                     <p class="cbm-mega-heading">Programs &amp; Outreach</p>

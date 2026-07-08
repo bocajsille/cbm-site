@@ -69,7 +69,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/leadership-and-history');?>">Leadership &amp; History</a> &rsaquo; History &amp; Timeline</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Leadership &amp; History &rsaquo; History &amp; Timeline</p>
 <h1>History &amp; Timeline</h1>
 </div></div>
 <div class="ib"><p>"How God Has Been Building CBM Since 1935" — What began with a small group of missionaries teaching Bible lessons to children has grown into a network of camps, missionaries, Released Time programs, training initiatives, church partnerships, and international ministry. The mission has never changed: teaching God's Word to children and youth.</p></div>

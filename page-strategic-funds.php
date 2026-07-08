@@ -49,7 +49,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/give');?>">Give</a> &rsaquo; Strategic Giving Opportunities</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Give &rsaquo; Strategic Giving Opportunities</p>
 <h1>Strategic Giving Opportunities</h1>
 </div></div>
 <div class="ib"><p>Strategic Giving Opportunities allow donors to support key initiatives that help the CBM family grow, develop, and respond to ministry opportunities around the world. Whether your passion is missionary training, expansion, caring for ministry leaders, or special projects — there is a giving opportunity for you.</p></div>

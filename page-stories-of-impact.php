@@ -116,7 +116,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a2940;}
 <h2>Partner in the Mission</h2>
 <p>The work represented in these stories is made possible through the faithfulness of churches, volunteers, missionaries, prayer partners, and financial supporters.</p>
 <div class="br">
-<a href="<?php echo home_url('/give');?>" class="btn">Support the Ministry</a>
+<a href="<?php echo home_url('/ways-to-give');?>" class="btn">Support the Ministry</a>
 <a href="<?php echo home_url('/serve-on-a-mission-trip');?>" class="btng">Serve with CBM</a>
 </div>
 </div>

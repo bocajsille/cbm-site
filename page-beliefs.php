@@ -358,13 +358,13 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
     <section class="cbm-cta-section">
         <h2>Learn More About CBM</h2>
         <p>Explore our mission, ministry model, and global impact to understand how CBM is reaching children with the gospel.</p>
-        <a href="<?php echo home_url('/mission-and-vision'); ?>" class="cbm-btn-white">Mission &amp; Vision</a>
-        <a href="<?php echo home_url('/donate'); ?>" class="cbm-btn-green">Give Today</a>
+        <a href="<?php echo home_url('/mission-vision'); ?>" class="cbm-btn-white">Mission &amp; Vision</a>
+        <a href="<?php echo home_url('/ways-to-give'); ?>" class="cbm-btn-green">Give Today</a>
     </section>
 
     <!-- FOOTER -->
     <footer class="cbm-footer">
-        <p>&copy; <?php echo date('Y'); ?> Children's Bible Ministries, Inc. &bull; <a href="<?php echo home_url('/financials'); ?>">Financial Accountability</a> &bull; <a href="<?php echo home_url('/child-protection-and-safety'); ?>">Child Protection Policy</a></p>
+        <p>&copy; <?php echo date('Y'); ?> Children's Bible Ministries, Inc. &bull; <a href="<?php echo home_url('/financials-financial-accountability'); ?>">Financial Accountability</a> &bull; <a href="<?php echo home_url('/child-protection-safety'); ?>">Child Protection Policy</a></p>
     </footer>
 
 </div>

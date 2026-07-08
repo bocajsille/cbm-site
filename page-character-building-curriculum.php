@@ -48,7 +48,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/programs-and-outreach');?>">Programs &amp; Outreach</a> &rsaquo; Character-Building Curriculum</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Programs &amp; Outreach &rsaquo; Character-Building Curriculum</p>
 <h1>Character-Building Curriculum</h1>
 </div></div>
 <div class="ib"><p>CBM's Character-Building Curriculum provides children and youth with consistent, Scripture-based instruction that shapes both biblical understanding and daily living. Rooted in God's Word, developed by CBM missionaries, and used across multiple ministry environments worldwide.</p></div>

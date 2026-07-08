@@ -54,7 +54,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a2940;}
 <div id="cbm-wrap">
 <div class="cbm-hero">
 <div class="cbm-hero-inner">
-<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/programs-and-outreach');?>">Programs &amp; Outreach</a> &rsaquo; Mission Trips</p>
+<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Programs &amp; Outreach &rsaquo; Mission Trips</p>
 <h1>Mission Trips</h1>
 </div></div>
 <div class="cbm-intro"><p>Children's Bible Ministries engages in short-term mission work as an extension of its long-term gospel ministry. Mission trips are not standalone events — they are strategic investments in ongoing relationships, established ministry contexts, and the sustained proclamation of God's Word to children and youth.</p></div>

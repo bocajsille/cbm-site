@@ -45,7 +45,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/serve');?>">Serve</a> &rsaquo; Volunteer Opportunities</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Serve &rsaquo; Volunteer Opportunities</p>
 <h1>Volunteer Opportunities</h1>
 </div></div>
 <div class="ib"><p>Volunteers are an essential part of CBM's ministry. From teaching Bible classes and supporting Released Time programs to helping at camps and serving local outreach efforts, every act of faithful service advances the Gospel among children and families.</p></div>

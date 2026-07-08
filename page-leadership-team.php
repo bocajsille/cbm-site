@@ -62,7 +62,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:#1a2940;}
 
 <div class="cbm-hero">
 <div class="cbm-hero-inner">
-<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/leadership-and-history');?>">Leadership &amp; History</a> &rsaquo; Leadership Team</p>
+<p class="cbm-bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Leadership &amp; History &rsaquo; Leadership Team</p>
 <h1>Leadership Team</h1>
 </div></div>
 

@@ -40,7 +40,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/serve');?>">Serve</a> &rsaquo; Work at a CBM Camp</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Serve &rsaquo; Work at a CBM Camp</p>
 <h1>Work at a CBM Camp</h1>
 </div></div>
 <div class="ib"><p>Camp ministry at Children's Bible Ministries is much more than seasonal programming — it is year-round gospel ministry. For those called to vocational ministry, serving at a CBM camp is an opportunity to invest in the next generation and help create environments where the Gospel is consistently taught and lived out throughout the entire year.</p></div>

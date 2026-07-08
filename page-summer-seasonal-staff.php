@@ -42,7 +42,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/serve');?>">Serve</a> &rsaquo; Summer &amp; Seasonal Staff</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Serve &rsaquo; Summer &amp; Seasonal Staff</p>
 <h1>Summer &amp; Seasonal Staff</h1>
 </div></div>
 <div class="ib"><p>Serving on summer or seasonal staff at a CBM camp is so much more than just a job — it is an opportunity to invest in the lives of children and youth through Christ-centered ministry. Whether serving for a summer, a retreat season, or another ministry period, seasonal staff members play a meaningful role in helping carry out the mission of CBM.</p></div>

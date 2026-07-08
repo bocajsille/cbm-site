@@ -30,7 +30,7 @@
 .form-note h3{font-size:1.05rem;font-weight:700;color:#0a2040;margin-bottom:.75rem;}
 .form-note p{font-size:.9rem;color:#546e8a;margin:0;font-family:'Arial',sans-serif;}
 .la{display:inline-block;color:#1a6fc4;font-weight:600;font-size:.95rem;text-decoration:none;margin-top:.4rem;}
-.la:hover{text-decoration:underline;}.la::after{content:' 92';}
+.la:hover{text-decoration:underline;}.la::after{content:' →';}
 .cta{background:#0a2040;padding:65px 40px;text-align:center;}
 .cta h2{font-size:clamp(1.6rem,3vw,2.1rem);color:#fff;font-weight:700;margin-bottom:1rem;}
 .cta p{font-size:1rem;color:rgba(255,255,255,.78);max-width:540px;margin:0 auto 2.2rem;line-height:1.7;font-family:'Arial',sans-serif;}
@@ -77,6 +77,7 @@
 <p>As part of its partnership with local churches, CBM intentionally supports the spiritual health and sustainability of those serving in full-time ministry. The Retreat Center at CBM Headquarters, as well as its Bible Camp properties in the eastern U.S., offer steeply discounted — and in some cases complimentary — lodging for full-time pastors and missionaries during non-summer months.</p>
 <p>By stewarding retreat facilities in this way, CBM partners with churches to support the long-term health of pastors and missionaries, provide accessible space for rest and renewal, remove financial barriers, and strengthen those actively serving the church and the gospel.</p>
 <a href="<?php echo home_url('/tuckaleechee-retreat-center');?>" class="la">Learn About the Retreat Center</a>
+<a href="<?php echo home_url('/pastor-retreat');?>" class="la">Sponsor a Pastor Retreat</a>
 </div></div>
 
 <div class="s sl"><div class="si sin">
@@ -109,7 +110,7 @@
 <div class="cta"><h2>Partner in the Mission</h2><p>Churches and CBM are stronger together. Let's explore how we can serve children, families, and communities side by side.</p>
 <div class="br">
 <a href="<?php echo home_url('/released-time-bible-education');?>" class="btn">Learn About Released Time</a>
-<a href="<?php echo home_url('/scope-gospel-impact');?>" class="btng">Scope &amp; Global Impact</a>
+<a href="<?php echo home_url('/scope-global-impact');?>" class="btng">Scope &amp; Global Impact</a>
 </div></div>
 <footer class="ft"><div class="ft-i"><p>&copy; <?php echo date('Y');?> Children's Bible Ministries, Inc. &bull; <a href="<?php echo home_url('/financials-financial-accountability');?>">Financial Accountability</a> &bull; <a href="<?php echo home_url('/child-protection-safety');?>">Child Protection Policy</a></p></div></footer>
 </div><?php wp_footer();?></body></html>

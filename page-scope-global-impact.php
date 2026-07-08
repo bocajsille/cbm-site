@@ -329,7 +329,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
         <div class="cbm-page-hero-inner">
             <p class="cbm-breadcrumb">
                 <a href="<?php echo home_url(); ?>">Home</a> &rsaquo;
-                <a href="<?php echo home_url('/about'); ?>">About</a> &rsaquo;
+                About &rsaquo;
                 Scope &amp; Global Impact
             </p>
             <h1>Scope &amp; Global Impact</h1>
@@ -571,7 +571,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
         <h2>Partner in the Mission</h2>
         <p>The breadth of CBM's reach is made possible through the faithfulness of churches, volunteers, missionaries, prayer partners, and financial supporters who believe that every child deserves to hear the gospel.</p>
         <div class="cbm-cta-buttons">
-            <a href="<?php echo home_url('/programs-and-outreach'); ?>" class="cbm-btn">Explore Programs &amp; Outreach</a>
+            <a href="<?php echo home_url('/ministry-opportunities'); ?>" class="cbm-btn">Explore Ministry Opportunities</a>
             <a href="<?php echo home_url('/church-partnerships'); ?>" class="cbm-btn-green">Partner With Your Church</a>
         </div>
     </section>
@@ -581,8 +581,8 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
         <div class="cbm-footer-inner">
             <div class="cbm-footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Children's Bible Ministries, Inc. &bull;
-                <a href="<?php echo home_url('/financials'); ?>">Financial Accountability</a> &bull;
-                <a href="<?php echo home_url('/child-protection-and-safety'); ?>">Child Protection Policy</a></p>
+                <a href="<?php echo home_url('/financials-financial-accountability'); ?>">Financial Accountability</a> &bull;
+                <a href="<?php echo home_url('/child-protection-safety'); ?>">Child Protection Policy</a></p>
             </div>
         </div>
     </footer>

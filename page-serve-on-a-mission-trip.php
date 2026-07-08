@@ -43,7 +43,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/serve');?>">Serve</a> &rsaquo; Serve on a Mission Trip</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Serve &rsaquo; Serve on a Mission Trip</p>
 <h1>Serve on a Mission Trip</h1>
 </div></div>
 <div class="ib"><p>Mission trips with CBM are opportunities to come alongside long-term missionaries, serve children and youth through gospel ministry, and take a meaningful step of obedience. Whether you're going individually or bringing your whole church, there's a place for you.</p></div>

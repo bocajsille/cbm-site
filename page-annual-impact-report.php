@@ -129,7 +129,7 @@
 
 <div class="cta"><h2>Partner in the Mission</h2><p>The work represented in these reports is made possible through the faithfulness of churches, volunteers, missionaries, prayer partners, and financial supporters.</p>
 <div class="br">
-<a href="<?php echo home_url('/give');?>" class="btn">Support the Ministry</a>
+<a href="<?php echo home_url('/ways-to-give');?>" class="btn">Support the Ministry</a>
 <a href="<?php echo home_url('/stories-of-impact');?>" class="btng">Read Stories of Impact</a>
 </div></div>
 <footer class="ft"><div class="ft-i"><p>&copy; <?php echo date('Y');?> Children's Bible Ministries, Inc. &bull; <a href="<?php echo home_url('/financials-financial-accountability');?>">Financial Accountability</a> &bull; <a href="<?php echo home_url('/child-protection-safety');?>">Child Protection Policy</a></p></div></footer>

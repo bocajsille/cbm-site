@@ -51,7 +51,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/give');?>">Give</a> &rsaquo; Ways to Give</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Give&rsaquo; Ways to Give</p>
 <h1>Ways to Give</h1>
 </div></div>
 <div class="ib"><p>Your Giving Helps Teach God's Word to Children and Youth. Every gift to Children's Bible Ministries helps advance Gospel-centered ministry through camps, Bible teaching, missionary training, church partnerships, mission trips, and outreach to children and youth around the world.</p></div>

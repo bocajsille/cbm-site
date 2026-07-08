@@ -48,7 +48,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/programs-and-outreach');?>">Programs &amp; Outreach</a> &rsaquo; Tuckaleechee Retreat Center</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Programs &amp; Outreach &rsaquo; Tuckaleechee Retreat Center</p>
 <h1>Tuckaleechee Retreat Center</h1>
 </div></div>
 <div class="ib"><p>Tuckaleechee Retreat Center (TRC) serves as the Global Headquarters and Missionary Training Center for CBM, while also providing a place of rest and refreshment for churches, groups, pastors, missionaries, couples, and individuals in the beauty of God's creation in the Great Smoky Mountains of Tennessee.</p></div>
@@ -106,9 +106,18 @@
 <h4>Tiered Pricing for Ministry Leaders</h4>
 <p>Tier 1: First pastor/missionary to book a given date receives the deepest discount. Additional tiers allow others to stay while still supporting the ministry. This structure keeps TRC accessible while sustaining it as a ministry resource.</p>
 </div>
-<a href="/mnt/user-data/uploads/" class="la">Download Tiered Pricing Information (PDF)</a>
+<div class="form-note">
+<p>⚠️ <strong>Webmaster note:</strong> Link "Pastor's Special" tiered pricing PDF here once created.</p>
+</div>
 <p style="margin-top:1.25rem;">Many churches choose to sponsor retreats for their pastors or missionaries as part of their commitment to care and partnership.</p>
 <a href="<?php echo home_url('/pastor-missionary-rest-renewal-fund');?>" class="la">Learn How Churches Can Sponsor a Retreat</a>
+</div></div>
+
+<div class="s sw"><div class="si sin">
+<span class="lb">For Pastors &amp; Missionaries</span>
+<h2>Are You a Pastor, Missionary, or Ministry Leader?</h2>
+<p>TRC offers a dedicated retreat experience designed specifically for those in full-time ministry — with tiered pricing, quiet spaces for prayer and reflection, and no agenda beyond rest.</p>
+<a href="<?php echo home_url('/pastor-retreat');?>" class="la">Learn More About Pastor Retreats</a>
 </div></div>
 
 <div class="s sw"><div class="si sin">

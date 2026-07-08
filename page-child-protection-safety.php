@@ -43,7 +43,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/leadership-and-history');?>">Leadership &amp; History</a> &rsaquo; Child Protection &amp; Safety</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Leadership &amp; History &rsaquo; Child Protection &amp; Safety</p>
 <h1>Child Protection &amp; Safety</h1>
 </div></div>
 <div class="ib"><p>At CBM, we believe children are a gift from God and are entrusted to our care for a season. Child protection is not simply a legal requirement — it is a biblical responsibility. We are committed to creating environments where children are physically, emotionally, and spiritually safe.</p></div>

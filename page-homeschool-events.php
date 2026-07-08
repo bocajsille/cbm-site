@@ -40,7 +40,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/programs-and-outreach');?>">Programs &amp; Outreach</a> &rsaquo; Homeschool Events</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Programs &amp; Outreach &rsaquo; Homeschool Events</p>
 <h1>Homeschool Events</h1>
 </div></div>
 <div class="ib"><p>Children's Bible Ministries is committed to supporting homeschooling families by providing Bible-centered events, retreats, and learning experiences that complement home education and encourage spiritual growth — partnering with parents as the primary disciplers of their children.</p></div>

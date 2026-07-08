@@ -329,7 +329,7 @@ body { font-family: 'Georgia', serif; color: #1a1a1a; }
 <section class="cbm-hero">
   <div class="cbm-hero-inner">
     <div class="cbm-breadcrumb">
-      <a href="/">Home</a> &rsaquo; <a href="/about">About</a> &rsaquo; Who We Are
+      <a href="/">Home</a> &rsaquo; About &rsaquo; Who We Are
     </div>
     <h1>Ministry Model: The 3 C's</h1>
   </div>
@@ -466,8 +466,7 @@ body { font-family: 'Georgia', serif; color: #1a1a1a; }
   <div class="cbm-cta-buttons">
     <a href="/church-partnerships-overview" class="cbm-btn">Explore Church Partnerships</a>
     <a href="/ways-to-give" class="cbm-btn">Support Gospel Ministry</a>
-    <a href="/programs-and-outreach" class="cbm-btn">View Our Programs &amp; Outreach</a>
-    <a href="/training-and-calling" class="cbm-btn">Learn How Leaders Are Trained</a>
+    <a href="/missionary-ministry-training" class="cbm-btn">Learn How Leaders Are Trained</a>
     <a href="https://www.continuetogive.com/cbm" class="cbm-btn-green" target="_blank">Donate Now</a>
   </div>
 </section>

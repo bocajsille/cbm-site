@@ -69,7 +69,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 
 <div class="cbm-hero-band">
     <div class="cbm-hero-inner">
-        <p class="cbm-breadcrumb"><a href="<?php echo home_url(); ?>">Home</a> &rsaquo; <a href="<?php echo home_url('/programs-and-outreach'); ?>">Programs &amp; Outreach</a> &rsaquo; Christian Camps &amp; Camp Ministry</p>
+        <p class="cbm-breadcrumb"><a href="<?php echo home_url(); ?>">Home</a> &rsaquo; Programs &amp; Outreach &rsaquo; Christian Camps &amp; Camp Ministry</p>
         <h1>Christian Camps &amp; Camp Ministry</h1>
     </div>
 </div>

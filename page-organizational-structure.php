@@ -44,7 +44,7 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?><?php get_template_part('cbm-nav'); ?>
 <div id="w">
 <div class="h"><div class="hi">
-<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; <a href="<?php echo home_url('/leadership-and-history');?>">Leadership &amp; History</a> &rsaquo; Organizational Structure</p>
+<p class="bc"><a href="<?php echo home_url();?>">Home</a> &rsaquo; Leadership &amp; History &rsaquo; Organizational Structure</p>
 <h1>Organizational Structure</h1>
 </div></div>
 <div class="ib"><p>Children's Bible Ministries is organized to support the faithful teaching of God's Word through missionaries, ministry locations, training programs, camps, partnerships, and outreach initiatives around the world — united through a shared mission, biblical foundation, and accountability structure.</p></div>
